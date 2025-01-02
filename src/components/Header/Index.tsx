@@ -101,8 +101,9 @@ function Header() {
                     role="menuitem"
                     aria-haspopup="true"
                     aria-expanded={activeMenu === index}
-                    onMouseEnter={() => handleMenuToggle(index)}
-                    onMouseLeave={() => handleMenuToggle(null)}
+                    onClick={() => handleMenuToggle(activeMenu === index ? null : index)}
+                    // onMouseEnter={() => handleMenuToggle(index)}
+                    // onMouseLeave={() => handleMenuToggle(null)}
                   >
                     <div className="container-icon">
                       <S.NavLink

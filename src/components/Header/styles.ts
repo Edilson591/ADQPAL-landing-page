@@ -158,7 +158,7 @@ export const Submenu = styled.ul.withConfig({
   background-color: #fff;
   opacity: ${(props) => (props.$activeSub ? "1" : "0")};
   transform: ${(props) =>
-    props.$activeSub ? "translateY(0)" : "translateY(-100px)"};
+    props.$activeSub ? "translateY(0)" : "translateY(-120px)"};
   pointer-events: ${(props) => (props.$activeSub ? "auto" : "none")};
   transition: opacity 0.3s ease, transform 0.3s ease;
 
