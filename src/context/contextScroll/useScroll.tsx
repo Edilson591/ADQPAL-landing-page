@@ -2,7 +2,8 @@ import { createContext, useContext } from "react";
 
 interface ScrollContextType {
     isActiveHeader: boolean;
-    elementRef:  React.RefObject<HTMLDivElement>
+    elementRefSlide:  React.RefObject<HTMLDivElement>
+    elementRefHeader:  React.RefObject<HTMLDivElement>
 }
 
 export const ScrollContext = createContext<ScrollContextType | undefined>(undefined)

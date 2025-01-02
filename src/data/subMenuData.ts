@@ -13,9 +13,9 @@ export const subMenuData: MenuItem[] = [
     label: "Institucional",
     link: "",
     submenu: [
-      { label: "Quem Somos", link: "/quemsomos" },
-      { label: "O que Fazemos", link: "/oquefazemos" },
-      { label: "Gestão e Administração", link: "/gestaoeadministracao" },
+      { label: "Quem Somos", link: "institucional/quemsomos" },
+      { label: "O que Fazemos", link: "institucional/oquefazemos" },
+      { label: "Gestão e Administração", link: "institucional/gestaoeadministracao" },
     ],
   },
   {
@@ -32,11 +32,12 @@ export const subMenuData: MenuItem[] = [
   },
   {
     id: "menu-3",
-    label: "Propriedades",
+    label: "Comunicação",
     link: "",
     submenu: [
-      { label: "Características", link: "/caracteristicas" },
-      { label: "Detalhes", link: "/detalhes" },
+      { label: "Eventos", link: "/eventos" },
+      { label: "Programas", link: "/programas" },
+      { label: "Galeria de fotos", link: "/galeriaDeFotos" },
     ],
   },
 ];

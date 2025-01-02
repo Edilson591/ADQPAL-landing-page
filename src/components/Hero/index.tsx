@@ -1,13 +1,16 @@
-import * as S from "./styles"
+import * as S from "./styles";
 
 interface PropsHero {
-    image: string
+  image: string;
+  height?: string;
 }
-  
-const Hero = ({image}: PropsHero) => {
-    return (
-      <S.HeroContainer $image={image}/>
-    );
-  };
-  
-  export default Hero;
+
+const Hero = ({ image, height }: PropsHero) => {
+  return (
+    <S.HeroContainer>
+      <S.ImgHero $image={image} $heightImg={height} />
+    </S.HeroContainer>
+  );
+};
+
+export default Hero;

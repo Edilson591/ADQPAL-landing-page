@@ -1,10 +1,10 @@
-
+import imgSlide1 from "../assets/foto-footer.jpg"
 
 export const slideData = [
     {
       id: 1,
       title: "Imagem 1",
-      url: "https://cdn.pixabay.com/photo/2023/02/18/11/22/cactus-7797750_1280.jpg",
+      url: imgSlide1,
     },
     {
       id: 2,

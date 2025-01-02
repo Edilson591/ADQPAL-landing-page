@@ -22,6 +22,7 @@ export const FooterGrid = styled.div`
 export const FooterSection = styled.div`
   .footer__description {
     margin-bottom: 1rem;
+    color: ${({theme}) => theme.colors.primary};
   }
   .footer__title {
     font-size: 1.25rem;

@@ -1,5 +1,5 @@
 import ContainerCarrossel from "../../components/Slides";
-import SectionDoacao from "../../sections/Home/sectionDoacao";
+import SectionDoacaoAndVoluntario from "../../sections/Home/sectionDoacaoAndVoluntariado";
 import SectionParceiros from "../../sections/Home/sectionParceiros";
 import SectionServices from "../../sections/Home/sectionServices";
 import { Container } from "../../styles";
@@ -10,7 +10,7 @@ function Home() {
       <ContainerCarrossel />
       <Container>
         <SectionServices />
-        <SectionDoacao />
+        <SectionDoacaoAndVoluntario />
         <SectionParceiros />
       </Container>
     </>

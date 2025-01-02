@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { CustonButton } from "../../../components/Cards/styles";
 
-export const SectionDoacao = styled.section`
+export const SectionDoacaoAndVoluntario = styled.section`
   padding: 4rem 2rem;
 `;
 
-export const ContainerDoacao = styled.div`
+export const ContainerDoacaoandVoluntario = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +30,7 @@ export const SectionContent = styled.div`
   width: 100%;
   height: 100%;
 
-  .section-doacao__content-image {
+  .section-doacao-voluntario__content-image {
     max-width: 500px;
     width: 100%;
     height: auto;
@@ -39,7 +39,7 @@ export const SectionContent = styled.div`
     flex-grow: 1;
   }
 
-  .section-doacao__content-description {
+  .section-doacao-voluntario__content-description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,7 +47,7 @@ export const SectionContent = styled.div`
     max-width: 500px;
     height: 100%;
 
-    .section-doacao__content-description-title {
+    .section-doacao-voluntario__content-description-title {
       font-size: ${({ theme }) => theme.sizes.large};
       color: ${({ theme }) => theme.colors.textPrimary};
       margin-bottom: 1rem;
@@ -57,7 +57,7 @@ export const SectionContent = styled.div`
       }
     }
     
-    .section-doacao__content-description-text {
+    .section-doacao-voluntario__content-description-text {
       font-size: ${({ theme }) => theme.sizes.medium};
       color: ${(prop) => prop.theme.colors.textPrimary};
       line-height: 1.5;
@@ -66,28 +66,28 @@ export const SectionContent = styled.div`
         font-size: ${({ theme }) => theme.sizes.small};
       }
     }
-    .section-doacao__content-description-button {
-      display: block;
+    .section-doacao-voluntario__content-description-button {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
       font-weight: bold;
       margin: 0 auto;
       width: 100%;
       margin-top: 1rem;
+      align-items: center;
     }
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    &.section-doacao__content {
+    &.section-doacao-voluntario__content {
       flex-direction: row;
       align-items: center;
       justify-content: center;
       text-align: left;
     }
 
-    .section-doacao__content-description {
+    .section-doacao-voluntario__content-description {
       margin-left: 1.5rem;
-      .section-doacao__content-description-button {
-        margin-top: 4rem;
-      }
     }
   }
 `;

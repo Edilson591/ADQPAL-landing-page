@@ -26,7 +26,7 @@ function ContainerCarrossel() {
   const [progress, setProgress] = useState<number>(0);
   const autoplayDelay = 10000;
   const progressInterval = useRef<number>(0);
-  const {elementRef} = useScroll()
+  const {elementRefSlide} = useScroll()
 
   const resetProgress = () => {
     setProgress(0);
@@ -43,7 +43,7 @@ function ContainerCarrossel() {
 
 
   return (
-    <S.ContainerSlide ref={elementRef}>
+    <S.ContainerSlide ref={elementRefSlide}>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay,EffectCube]}
         effect="cube"

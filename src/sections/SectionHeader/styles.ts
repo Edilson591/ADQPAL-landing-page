@@ -21,7 +21,6 @@ export const HeaderDescription = styled.p`
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 22px;
-  color: ${(prop) => prop.theme.colors.textPrimary};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     font-size: ${(prop) => prop.theme.sizes.small};

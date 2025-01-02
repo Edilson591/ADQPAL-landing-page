@@ -17,7 +17,7 @@ export const Header = styled.header<AtiveHeader>`
   color: ${(props) => props.theme.colors.secondary};
   border-bottom: 1px solid ${(props) => props.theme.colors.secondary};
   position: relative;
-  position: sticky;
+  position: ${(prop) => prop.$isActiveHeader ? "static" : "sticky"};
   top: 0;
   z-index: 9999;
   opacity: ${(props) => (props.$isActiveHeader ? "0" : "1")};

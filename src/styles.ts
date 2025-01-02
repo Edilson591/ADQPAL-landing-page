@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
+import imagemBackground from "./assets/background_adppal.png"
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -31,10 +32,12 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  background: url("/background_adppal.png") no-repeat center center; 
+  background: url(${imagemBackground})no-repeat center center; 
   background-size: cover; 
   font-family: ${(props) => props.theme.fonts.body};
-  color: #000;
+  p {
+    color: rgba(0,0,0,0.6);
+  }
 
 
   .swiper{
@@ -64,7 +67,7 @@ body {
 
 export const Container = styled.div`
  max-width: 1280px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 
   @media (max-width: 1024px) {

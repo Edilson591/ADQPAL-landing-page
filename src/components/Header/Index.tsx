@@ -11,7 +11,7 @@ import logoADQPAL from "../../assets/logo-adqpal.png";
 function Header() {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
   const [activeMenuMobile, setActiveMenuMobile] = useState<boolean>(false);
-  const { isActiveHeader } = useScroll();
+  const { isActiveHeader,elementRefHeader } = useScroll();
 
   const toggleMobileMenu = () => setActiveMenuMobile((prev) => !prev);
 
@@ -30,7 +30,7 @@ function Header() {
 
   return (
     <>
-      <S.Header $isActiveHeader={isActiveHeader}>
+      <S.Header $isActiveHeader={isActiveHeader} ref={elementRefHeader}>
         <Container>
           <S.Nav aria-label="Menu Principal">
             <div className="container-logo">
