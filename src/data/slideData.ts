@@ -1,4 +1,5 @@
 import imgSlide1 from "../assets/foto-footer.jpg"
+import imgSlide2 from "../assets/foto-frente-adqpal.jpg"
 
 export const slideData = [
     {
@@ -9,7 +10,7 @@ export const slideData = [
     {
       id: 2,
       title: "Imagem 2",
-      url: "https://media.istockphoto.com/id/1319996586/pt/foto/stylish-room-interior-with-beautiful-potted-cacti.webp?s=1024x1024&w=is&k=20&c=-sy4iKm4riS4ZoRBqKmXZ6uRjpetRZnuRfE5q2VFBxU=",
+      url: imgSlide2,
     },
     {
       id: 3,

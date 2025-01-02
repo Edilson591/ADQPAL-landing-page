@@ -16,7 +16,10 @@ export const ListPrincipios = styled.ul`
   gap: 2rem;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    display: block;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 `;
 

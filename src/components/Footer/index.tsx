@@ -1,6 +1,8 @@
 import { Container } from "../../styles";
 import * as S from "./styles";
 import { Mail, Phone } from "lucide-react";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+
 // import fotoFooter from "../../../public/logo-adqpal.png";
 
 function Footer() {
@@ -40,7 +42,27 @@ function Footer() {
                     className="footer-contact__link"
                   >
                     <Phone />
-                    +55 32 3212-3456
+                    +55 82 99163-6096
+                  </a>
+                </li>
+                <li className="footer-contact__list-item">
+                  <a
+                    href="tel:+553232123456"
+                    title="Ligar para o contato"
+                    className="footer-contact__link"
+                  >
+                    <FaWhatsapp size={24} />
+                    82 99405-1730
+                  </a>
+                </li>
+                <li className="footer-contact__list-item">
+                  <a
+                    href="https://instagram.com/adqpa.lsmc"
+                    title="Ligar para o instragram"
+                    className="footer-contact__link"
+                  >
+                    <FaInstagram size={24} />
+                    Instagram
                   </a>
                 </li>
               </ul>
@@ -48,10 +70,13 @@ function Footer() {
             <S.AttendanceContainer className="content-horario">
               <h3 className="attendance-title">Horário de Atendimento</h3>
               <ul className="attendance-list">
-                <li className="attendance-list-item">Segunda a Sexta</li>
-                <li className="attendance-list-item">8:00 às 17:00</li>
                 <li className="attendance-list-item">
-                  Plantão 24h para Emergências
+                  <span className="attendance-list__day">Segunda a Sexta</span>
+                  <span className="attendance-list__time">8:00 às 17:00</span>
+                </li>
+                <li className="attendance-list-item">
+                  <span className="attendance-list__day">Sábado</span>
+                  <span className="attendance-list__time">8:00 às 14:00</span>
                 </li>
               </ul>
             </S.AttendanceContainer>

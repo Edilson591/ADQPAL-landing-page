@@ -70,7 +70,7 @@ function PageQuemSomos() {
               <div className="list-item__icon">
                 <Eye color="#38A973" size={32} />
               </div>
-              <h3 className="list-item__title">Missão</h3>
+              <h3 className="list-item__title">Visão</h3>
               <p className="list-item__text">
                 Ser reconhecida pelo cidadão por promover ações e serviços
                 públicos em saúde, assistência social e educação de maneira
@@ -81,7 +81,7 @@ function PageQuemSomos() {
               <div className="list-item__icon">
                 <Shield color="#38A973" size={32} />
               </div>
-              <h3 className="list-item__title">Missão</h3>
+              <h3 className="list-item__title">Valores</h3>
               <ul className="list-item">
                 <li className="list-item__item">
                   <CheckCircle size={10} color="#84B622"/>

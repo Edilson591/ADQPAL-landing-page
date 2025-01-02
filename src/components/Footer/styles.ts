@@ -22,14 +22,14 @@ export const FooterGrid = styled.div`
 export const FooterSection = styled.div`
   .footer__description {
     margin-bottom: 1rem;
-    color: ${({theme}) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primary};
   }
   .footer__title {
     font-size: 1.25rem;
     margin-bottom: 1rem;
     font-weight: bold;
   }
-  `;
+`;
 
 export const ContactsContainer = styled.div`
   margin-bottom: 2rem;
@@ -45,18 +45,18 @@ export const ContactsContainer = styled.div`
         margin-bottom: 0.5rem;
         justify-content: center;
         cursor: pointer;
-        
+
         @media (min-width: 768px) {
           justify-content: flex-start;
         }
-        
+
         &:hover {
           color: ${({ theme }) => theme.colors.textSecondary};
         }
       }
     }
   }
-  
+
   .footer-contact__title {
     font-size: 1.25rem;
     margin-bottom: 1rem;
@@ -72,12 +72,21 @@ export const AttendanceContainer = styled.div`
   }
 
   .attendance-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     font-size: 0.875rem;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+      flex-direction: column;
+    }
     .attendance-list-item {
       margin-bottom: 0.5rem;
+      span {
+        display: block;
+        line-height: 1.2rem;
+      }
     }
   }
 `;
