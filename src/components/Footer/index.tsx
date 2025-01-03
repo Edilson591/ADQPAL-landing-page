@@ -37,7 +37,7 @@ function Footer() {
                 </li>
                 <li className="footer-contact__list-item">
                   <a
-                    href="tel:+553232123456"
+                    href="tel:+5582991636096"
                     title="Ligar para o adqpal"
                     className="footer-contact__link"
                   >
@@ -47,7 +47,7 @@ function Footer() {
                 </li>
                 <li className="footer-contact__list-item">
                   <a
-                    href="tel:+553232123456"
+                    href="tel:+55994051730"
                     title="contato de whatsapp"
                     className="footer-contact__link"
                   >
