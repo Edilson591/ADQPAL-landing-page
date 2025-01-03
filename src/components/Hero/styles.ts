@@ -15,12 +15,15 @@ export const HeroContainer = styled.div`
 
 export const ImgHero = styled.div<PropHero>`
   width: 100%;
-  height: ${({$heightImg}) => $heightImg ? $heightImg : "300px"};
+  height: 300px;
   max-width: 2000px;
   background-image: url(${({ $image }) => $image});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 4rem;
-  border-radius: 4px;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    max-height: 200px;
+  }
 `;

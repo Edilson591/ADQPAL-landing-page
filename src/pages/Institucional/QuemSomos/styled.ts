@@ -4,6 +4,9 @@ export const SectionAboutUs = styled.section``;
 
 export const TextContent = styled.div`
   margin-bottom: 2rem;
+  p {
+    margin-bottom: .5rem;
+  }
 `;
 
 export const ContainerPrincipios = styled.div`

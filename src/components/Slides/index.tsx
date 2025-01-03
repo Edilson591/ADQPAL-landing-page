@@ -4,13 +4,13 @@ import {
   Scrollbar,
   A11y,
   Autoplay,
-  EffectCube
+  EffectCube,
 } from "swiper/modules";
 import * as S from "./styles";
 import { useEffect, useRef, useState } from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { register } from "swiper/element";
+import { useScroll } from "../../context/contextScroll/useScroll";
 import { slideData } from "../../data/slideData";
 
 // Import Swiper styles
@@ -20,13 +20,14 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-cube";
-import { useScroll } from "../../context/contextScroll/useScroll";
+import { Link } from "react-router-dom";
+
 
 function ContainerCarrossel() {
   const [progress, setProgress] = useState<number>(0);
   const autoplayDelay = 10000;
   const progressInterval = useRef<number>(0);
-  const {elementRefSlide} = useScroll()
+  const { elementRefSlide } = useScroll();
 
   const resetProgress = () => {
     setProgress(0);
@@ -40,12 +41,17 @@ function ContainerCarrossel() {
     return () => clearInterval(progressInterval.current);
   }, []);
 
-
-
   return (
     <S.ContainerSlide ref={elementRefSlide}>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay,EffectCube]}
+        modules={[
+          Navigation,
+          Pagination,
+          Scrollbar,
+          A11y,
+          Autoplay,
+          EffectCube,
+        ]}
         effect="cube"
         cubeEffect={{
           shadow: true,
@@ -66,11 +72,13 @@ function ContainerCarrossel() {
       >
         {slideData.map((item) => (
           <SwiperSlide key={item.id}>
-            <S.SlideImage
-              src={item.url}
-              alt={item.title}
-              className="slide-item"
-            />
+            <Link to={item.link || "#"}>
+              <S.SlideImage
+                src={item.image}
+                alt={item.title}
+                className="slide-item"
+              />
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

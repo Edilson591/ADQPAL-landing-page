@@ -7,18 +7,27 @@ interface ProgressProps {
 export const ContainerSlide = styled.div`
   position: relative;
   margin-bottom: 4rem;
-
+  
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     margin: 0;
   }
-`;
+  `;
 
 export const SlideImage = styled.img`
   width: 100%;
-  height: auto;
-  max-height: 500px;
+  height: 500px;
+  min-height: 100%;
   object-fit: cover;
   overflow: hidden;
+  /* object-position: center; */
+  object-position: top;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    max-height: 250px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+    height: 440px;
+  }
 `;
 
 export const ProgressBar = styled.div<ProgressProps>`

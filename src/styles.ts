@@ -40,14 +40,14 @@ body {
   }
 
 
-  .swiper{
+  /* .swiper{
     max-height: 500px;
-  }
+  } */
   
   .swiper-slide {
     position: relative;
   width: 100%;
-  height: 400px; 
+  /* height: 400px;  */
   overflow: hidden; 
   }
 

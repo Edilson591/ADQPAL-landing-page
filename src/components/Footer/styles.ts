@@ -55,6 +55,14 @@ export const ContactsContainer = styled.div`
         }
       }
     }
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 250px;
+    }
   }
 
   .footer-contact__title {

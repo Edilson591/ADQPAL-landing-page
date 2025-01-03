@@ -27,18 +27,18 @@ function Footer() {
               <ul className="footer-contact__list">
                 <li className="footer-contact__list-item">
                   <a
-                    href="mailto:contato@instituicao.com"
-                    title="Enviar um e-mail para contato"
+                    href="mailto:associacaoadpaloficial@gmail.com"
+                    title="Enviar um e-mail para adqpal"
                     className="footer-contact__link"
                   >
                     <Mail />
-                    contato@instituicao.com
+                    associacaoadpaloficial@gmail.com
                   </a>
                 </li>
                 <li className="footer-contact__list-item">
                   <a
                     href="tel:+553232123456"
-                    title="Ligar para o contato"
+                    title="Ligar para o adqpal"
                     className="footer-contact__link"
                   >
                     <Phone />
@@ -48,7 +48,7 @@ function Footer() {
                 <li className="footer-contact__list-item">
                   <a
                     href="tel:+553232123456"
-                    title="Ligar para o contato"
+                    title="contato de whatsapp"
                     className="footer-contact__link"
                   >
                     <FaWhatsapp size={24} />
@@ -58,7 +58,7 @@ function Footer() {
                 <li className="footer-contact__list-item">
                   <a
                     href="https://instagram.com/adqpa.lsmc"
-                    title="Ligar para o instragram"
+                    title="contato de instragram"
                     className="footer-contact__link"
                   >
                     <FaInstagram size={24} />

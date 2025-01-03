@@ -1,14 +1,14 @@
 export const dataDocumentosInstitucionais = [
   {
-    title: "Alvará de Funcionamento",
+    title: "Alvará de Funcionamento 2024",
     link: "/src/files/Alvará de Funcionamento ADQPAL.pdf",
   },
   {
-    title: "Alvará Sanitário",
+    title: "Alvará Sanitário 2024/2025",
     link: "/src/files/Alvará Sanitário.pdf",
   },
   {
-    title: "Declaração de Funcionamento",
+    title: "Declaração de Funcionamento regular do poder legislativo",
     link: "/src/files/Declaração de Funcionamento regular do Poder Legislativo.pdf",
   },
   {
@@ -40,23 +40,15 @@ export const dataDocumentosInstitucionais = [
     link: "/src/files/atestado de funcionamento de Assistência social.pdf",
   },
   {
-    title: "Certificado de inscrição",
+    title: "Certificado de inscrição no Conselho Municipal de Assistência Social",
     link: "/src/files/certificado de inscrição.pdf",
   },
   {
-    title: "Anexo III Declaração",
+    title: "Declaração do Gestor Municipal de Saúde",
     link: "/src/files/anexo III_Declaração.pdf",
   },
   {
-    title: "Anexo III Declaração",
-    link: "/src/files/anexo III_Declaração.pdf",
-  },
-  {
-    title: "Carta de recomendação",
-    link: "/src/files/carta de recomendação.pdf",
-  },
-  {
-    title: "Carta de recomendação",
+    title: "Carta de recomendação Dr.Aman Lima Rocha Caldas",
     link: "/src/files/carta de recomendação.pdf",
   },
   {
@@ -73,6 +65,10 @@ export const dataDocumentosInstitucionais = [
   },
   {
     title: "Estatuto Social ADQPAL dezembro 2024",
+    link: "/src/files/Estatuto ADQPAL Dez2024.pdf",
+  },
+  {
+    title: "Atestado de capacidade técnica",
     link: "/src/files/Estatuto ADQPAL Dez2024.pdf",
   },
 ];

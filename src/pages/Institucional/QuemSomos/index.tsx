@@ -2,13 +2,13 @@ import * as S from "./styled";
 import SectionHeaders from "../../../sections/SectionHeader";
 import { Container } from "../../../styles";
 import Hero from "../../../components/Hero";
-import imgHeroQuemSomos from "../../../assets/foto-frente-adqpal.jpg";
+import imgHeroQuemSomos from "../../../assets/foto-quem-somos.jpg";
 import { CheckCircle, Eye, Shield, Target } from "lucide-react";
 
 function PageQuemSomos() {
   return (
     <S.SectionAboutUs>
-      <Hero image={imgHeroQuemSomos} height="500px" />
+      <Hero image={imgHeroQuemSomos} />
       <Container>
         <SectionHeaders title="Quem Somos" />
         <S.TextContent>

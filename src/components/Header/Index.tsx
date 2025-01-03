@@ -30,7 +30,7 @@ function Header() {
 
   return (
     <>
-      <S.Header $isActiveHeader={isActiveHeader} ref={elementRefHeader}>
+      <S.Header $isActiveHeader={isActiveHeader && !activeMenuMobile} ref={elementRefHeader}>
         <Container>
           <S.Nav aria-label="Menu Principal">
             <div className="container-logo">
@@ -42,7 +42,7 @@ function Header() {
             {/* Menu Desktop*/}
             <S.MenuDesktop role="menu">
               <li role="menuitem" aria-haspopup="true">
-                <S.NavLink to="/">Home</S.NavLink>
+                <S.NavLink to="/">Inicio</S.NavLink>
               </li>
               {subMenuData.map((item, index) => (
                 <li
@@ -91,7 +91,7 @@ function Header() {
               <Container>
                 <li role="menuitem" aria-haspopup="true">
                   <S.NavLink to="/" onClick={toggleMobileMenu}>
-                    Home
+                    Inicio
                   </S.NavLink>
                 </li>
                 {subMenuData.map((item, index) => (
@@ -102,8 +102,6 @@ function Header() {
                     aria-haspopup="true"
                     aria-expanded={activeMenu === index}
                     onClick={() => handleMenuToggle(activeMenu === index ? null : index)}
-                    // onMouseEnter={() => handleMenuToggle(index)}
-                    // onMouseLeave={() => handleMenuToggle(null)}
                   >
                     <div className="container-icon">
                       <S.NavLink

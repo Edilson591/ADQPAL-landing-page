@@ -16,13 +16,12 @@ export const Header = styled.header<AtiveHeader>`
   background-color: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.secondary};
   border-bottom: 1px solid ${(props) => props.theme.colors.secondary};
-  position: relative;
-  position: ${(prop) => prop.$isActiveHeader ? "static" : "sticky"};
+  position: sticky;
   top: 0;
   z-index: 9999;
   opacity: ${(props) => (props.$isActiveHeader ? "0" : "1")};
   visibility: ${(props) => (props.$isActiveHeader ? "hidden" : "visible")};
-  transition: all 0.5s ease;
+  transition: opacity .5s ease, visibility .5s ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     opacity: 1;
@@ -69,12 +68,14 @@ export const Nav = styled.nav`
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     button {
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
   .container-logo {
     img {
-      max-width: 200px;
+      max-width: 170px;
     }
   }
 `;
@@ -158,7 +159,7 @@ export const Submenu = styled.ul.withConfig({
   background-color: #fff;
   opacity: ${(props) => (props.$activeSub ? "1" : "0")};
   transform: ${(props) =>
-    props.$activeSub ? "translateY(0)" : "translateY(-120px)"};
+    props.$activeSub ? "translateY(0)" : "translateY(-200px)"};
   pointer-events: ${(props) => (props.$activeSub ? "auto" : "none")};
   transition: opacity 0.3s ease, transform 0.3s ease;
 

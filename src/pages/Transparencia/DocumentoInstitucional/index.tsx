@@ -17,7 +17,7 @@ function PageDocumentosInstituicao() {
             <S.StyledList>
               {dataDocumentosInstitucionais.map((doc, index) => (
                 <S.StyledListItem key={index}>
-                  <FileText width={14} />
+                  <FileText size={16} style={{ flexShrink: 0 }} />
                   <a href={doc.link} target="_blank" rel="noopener noreferrer">
                     {doc.title}
                   </a>
