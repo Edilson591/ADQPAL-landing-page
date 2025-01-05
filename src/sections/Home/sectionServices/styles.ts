@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SectionServices = styled.section`
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
 `;
 
 export const SectionsHeader = styled.div`

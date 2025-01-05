@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 interface PropHero {
   $image: string;
-  $heightImg?: string;
+  $marginBottom?: string;
 }
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.section`
   margin: 0 auto;
   display: flex;
   align-items:center;
@@ -21,8 +21,8 @@ export const ImgHero = styled.div<PropHero>`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 4rem;
-  
+  margin-bottom: ${({ $marginBottom }) => $marginBottom};
+
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     max-height: 200px;
   }

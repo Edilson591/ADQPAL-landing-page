@@ -4,6 +4,7 @@ import PageTransparencia from "../pages/Transparencia/prestacaoDeContas";
 import PageDocumentosInstituicao from "../pages/Transparencia/DocumentoInstitucional";
 import ScrollToTop from "../components/Hooks/ScrollToTop";
 import PageQuemSomos from "../pages/Institucional/QuemSomos";
+import PageOQueFazemos from "../pages/Institucional/OqueFazemos";
 
 function Routes() {
   return (
@@ -19,8 +20,8 @@ function Routes() {
           path="/transparencia/documentos-institucionais"
           element={<PageDocumentosInstituicao />}
         />
-        <Route path="/institucional/quemsomos"
-        element={<PageQuemSomos/>}/>
+        <Route path="/institucional/quemsomos" element={<PageQuemSomos />} />
+        <Route path="institucional/oquefazemos" element={<PageOQueFazemos />} />
       </RouterRoutes>
     </>
   );

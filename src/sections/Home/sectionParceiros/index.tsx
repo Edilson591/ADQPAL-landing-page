@@ -1,4 +1,4 @@
-import SectionHeaders from "../../SectionHeader";
+import SectionHeaders from "../../MainHeader";
 import * as S from "./styles";
 import logoAgibem from "../../../assets/logo-agibem.jpeg";
 import logoLabClin from "../../../assets/logo-labclin.jpeg";

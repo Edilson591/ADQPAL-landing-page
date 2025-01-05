@@ -1,6 +1,6 @@
 import * as S from "./styles";
 import photoDoacao from "../../../assets/foto-section-doacao.jpeg";
-import SectionHeaders from "../../SectionHeader";
+import SectionHeaders from "../../MainHeader";
 
 function SectionDoacaoAndVoluntario() {
   return (

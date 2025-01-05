@@ -4,7 +4,7 @@ import Cards from "../../../components/Cards";
 import clinico from "../../../assets/foto-card-clinico.jpeg";
 import clinicoAman from "../../../assets/foto-card-Dr-Aman.jpeg";
 import acaoSolidaria from "../../../assets/foto-card-da-solidariedade.jpeg";
-import SectionHeaders from "../../SectionHeader";
+import SectionHeaders from "../../MainHeader";
 
 function SectionServices() {
   return (

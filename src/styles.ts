@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import imagemBackground from "./assets/background_adppal.png"
+import imagemBackground from "./assets/background_adppal.png";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -15,17 +15,17 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${(({theme}) => theme.colors.textSecondary)}; 
+    background-color: ${({ theme }) => theme.colors.textSecondary}; 
     border-radius: 10px; 
     border: 3px solid #fff; 
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: ${(({theme}) => theme.colors.secondary)}; 
+    background-color: ${({ theme }) => theme.colors.secondary}; 
   }
   
   ::-webkit-scrollbar-track {
-    background: ${(({theme}) => theme.colors.primary)}; 
+    background: ${({ theme }) => theme.colors.primary}; 
     border-radius: 10px; 
   }
  
@@ -39,16 +39,11 @@ body {
     color: rgba(0,0,0,0.6);
   }
 
-
-  /* .swiper{
-    max-height: 500px;
-  } */
   
   .swiper-slide {
     position: relative;
-  width: 100%;
-  /* height: 400px;  */
-  overflow: hidden; 
+    width: 100%;
+    overflow: hidden; 
   }
 
   .swiper-button-next,
@@ -66,7 +61,7 @@ body {
 }`;
 
 export const Container = styled.div`
- max-width: 1280px;
+  max-width: 1280px;
   width: 90%;
   margin: 0 auto;
 
@@ -74,6 +69,3 @@ export const Container = styled.div`
     max-width: 90%;
   }
 `;
-
-
-

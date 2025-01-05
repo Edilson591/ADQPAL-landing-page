@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
-export const SectionAboutUs = styled.section``;
+export const Sectionimage = styled.section`
+  box-sizing: border-box;
+  margin: 0;
+`;
 
 export const TextContent = styled.div`
   margin-bottom: 2rem;
   p {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 `;
 

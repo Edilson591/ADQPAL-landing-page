@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { CustonButton } from "../../../components/Cards/styles";
 
 export const SectionDoacaoAndVoluntario = styled.section`
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
 `;
 
 export const ContainerDoacaoandVoluntario = styled.div`

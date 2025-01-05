@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const SectionDocumentos = styled.section`
- 
+ box-sizing: border-box;
 `;
 
 export const ContainerOverlay = styled.div`
   background: ${({ theme }) => theme.colors.textSecondary};
-  padding: 2rem;
 `;
 
 export const ListContainer = styled.div`

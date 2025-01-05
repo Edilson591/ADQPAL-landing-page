@@ -15,7 +15,7 @@ const scroll = keyframes`
 `;
 
 export const SectionParceiros = styled.section`
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
 `;
 
 export const SliderContainer = styled.div`

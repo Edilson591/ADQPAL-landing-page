@@ -23,7 +23,7 @@ export const Header = styled.header<AtiveHeader>`
   visibility: ${(props) => (props.$isActiveHeader ? "hidden" : "visible")};
   transition: opacity .5s ease, visibility .5s ease;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     opacity: 1;
     visibility: visible;
   }
