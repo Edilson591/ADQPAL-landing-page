@@ -3,6 +3,10 @@ import { CustonButton } from "../../../components/Cards/styles";
 
 export const SectionDoacaoAndVoluntario = styled.section`
   padding: 2rem 1rem;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding: 2rem 0;
+  }
 `;
 
 export const ContainerDoacaoandVoluntario = styled.div`
@@ -51,12 +55,12 @@ export const SectionContent = styled.div`
       font-size: ${({ theme }) => theme.sizes.large};
       color: ${({ theme }) => theme.colors.textPrimary};
       margin-bottom: 1rem;
-      
+
       @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
         font-size: ${({ theme }) => theme.sizes.medium};
       }
     }
-    
+
     .section-doacao-voluntario__content-description-text {
       font-size: ${({ theme }) => theme.sizes.medium};
       color: ${(prop) => prop.theme.colors.textPrimary};

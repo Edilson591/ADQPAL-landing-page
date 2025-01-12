@@ -1,21 +1,22 @@
 import SectionHeaders from "../../MainHeader";
 import * as S from "./styles";
-import logoAgibem from "../../../assets/logo-agibem.jpeg";
-import logoLabClin from "../../../assets/logo-labclin.jpeg";
-import logoSantaCasa from "../../../assets/logo-santacasa-Photoroom.png";
-import logoDiag from "../../../assets/logo-diag.jpeg";
-import logoSateal from "../../../assets/logo-sateal.jpg"
+import logoAgibem from "../../../assets/imagens parceiros/logo-agibem.jpeg";
+import logoLabClin from "../../../assets/imagens parceiros/logo-labclin.jpeg";
+import logoSantaCasa from "../../../assets/imagens parceiros/logo-santacasa.png";
+import logoDiag from "../../../assets/imagens parceiros/logo-diag.jpeg";
+import logoSateal from "../../../assets/imagens parceiros/logo-sateal.jpg"
+import logoNaedjaMelo from "../../../assets/imagens parceiros/logo-naedja-melo.jpeg"
 
 function SectionParceiros() {
   return (
     <S.SectionParceiros>
-      <SectionHeaders title="Parceiros" />
+      <SectionHeaders title="Parceiros" id="parceiros-section"/>
       <S.SliderContainer role="region" aria-labelledby="parceiros-title">
         <S.SlideContent role="list">
           <S.Slide role="listitem" aria-label="Parceiro agibem">
             <S.LinkSlide
               href="https://web.agiben.com.br/"
-              target="_blank"
+              target="reg"
               rel="noopener noreferrer"
               aria-label="Visite o site da Agibem"
             >
@@ -29,7 +30,7 @@ function SectionParceiros() {
           <S.Slide role="listitem" aria-label="Parceiro labClin">
             <S.LinkSlide
               href="https://instagram.com/cllabclin"
-              target="_blank"
+              target="reg"
               rel="noopener noreferrer"
               aria-label="Visite o instagram da LabClin"
             >
@@ -46,7 +47,7 @@ function SectionParceiros() {
           >
             <S.LinkSlide
               href="https://santacasadesaomiguel.com.br/"
-              target="_blank"
+              target="reg"
               rel="noopener noreferrer"
               aria-label="Visite o site da Santa Casa de São Miguel dos Campos"
             >
@@ -74,13 +75,27 @@ function SectionParceiros() {
           <S.Slide role="listitem" aria-label="Parceiro Sateal">
             <S.LinkSlide
               href="https://instagram.com/satealsindicato"
-              target="_blank"
+              target="reg"
               rel="noopener noreferrer"
               aria-label="Visite o instragram do Sateal"
             >
               <S.SlideImg
                 src={logoSateal}
                 alt="Logotipo do parceiro Sateal"
+                role="img"
+              />
+            </S.LinkSlide>
+          </S.Slide>
+          <S.Slide role="listitem" aria-label="Parceiro Naeja Melo">
+            <S.LinkSlide
+              href="https://instagram.com/satealsindicato"
+              target="reg"
+              rel="noopener noreferrer"
+              aria-label="Visite o instragram da Naeja Melo"
+            >
+              <S.SlideImg
+                src={logoNaedjaMelo}
+                alt="Logotipo do Naedja Melo"
                 role="img"
               />
             </S.LinkSlide>

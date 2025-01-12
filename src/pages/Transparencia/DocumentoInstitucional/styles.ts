@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SectionDocumentos = styled.section`
- box-sizing: border-box;
+  box-sizing: border-box;
 `;
 
 export const ContainerOverlay = styled.div`
@@ -45,6 +45,7 @@ export const StyledListItem = styled.li`
 
   &:last-of-type {
     flex: 33.333333%;
+    
     @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
       flex: 50%;
     }
@@ -53,8 +54,11 @@ export const StyledListItem = styled.li`
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.primary};
-    font-size: 0.8rem;
+    font-size: ${({ theme }) => theme.sizes.medium};
 
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+      font-size: ${({ theme }) => theme.sizes.small};
+    }
     &:hover {
       text-decoration: underline;
     }

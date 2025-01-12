@@ -1,29 +1,29 @@
 import styled from "styled-components";
 
 interface PropHero {
-  $image: string;
+  src: string;
   $marginBottom?: string;
 }
 
 export const HeroContainer = styled.section`
   margin: 0 auto;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 `;
 
-export const ImgHero = styled.div<PropHero>`
+export const ImgHero = styled.img<PropHero>`
   width: 100%;
-  height: 300px;
-  max-width: 2000px;
-  background-image: url(${({ $image }) => $image});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: ${({ $marginBottom }) => $marginBottom};
+  height: auto; 
+  object-fit: cover; 
+  max-height: 400px; 
+  margin-bottom: ${({ $marginBottom }) => $marginBottom || "0"};
+  object-position: bottom;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    max-height: 200px;
+    max-height: 250px; 
   }
 `;

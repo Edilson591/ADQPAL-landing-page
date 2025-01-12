@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Lato, sans-serif;
+  font-family: Roboto, sans-serif;
   list-style: none;
   text-decoration: none;
 
@@ -32,6 +32,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
+  /* background:${({theme}) => theme.colors.background}; */
   background: url(${imagemBackground})no-repeat center center; 
   background-size: cover; 
   font-family: ${(props) => props.theme.fonts.body};

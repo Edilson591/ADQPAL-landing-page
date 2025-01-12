@@ -154,7 +154,10 @@ function Header() {
             </S.MenuMobile>
 
             {/* Mobile Menu Button*/}
-            <button onClick={() => setActiveMenuMobile(!activeMenuMobile)}>
+            <button onClick={() => {
+              setActiveMenuMobile(!activeMenuMobile)
+              setActiveMenu(null)
+              }}>
               {activeMenuMobile ? <X size={30} /> : <Menu size={30} />}
             </button>
           </S.Nav>
@@ -162,7 +165,10 @@ function Header() {
       </S.Header>
       <S.BackgroundOverlay
         $activeMenuMobile={activeMenuMobile}
-        onClick={() => setActiveMenuMobile(!activeMenuMobile)}
+        onClick={() => {
+          setActiveMenuMobile(!activeMenuMobile)
+          setActiveMenu(null)
+        }}
       />
     </>
   );

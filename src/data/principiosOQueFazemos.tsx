@@ -7,6 +7,8 @@ import {
   Heart,
   Search,
   UserCheck,
+  Briefcase,
+  ClipboardCheck,
 } from "lucide-react";
 import { Principios } from "./principiosQuemSomosData";
 
@@ -62,6 +64,36 @@ export const principiosOQueFazemos: Principios[] = [
       {
         icon: <UserCheck color="#38A973" size={16} />,
         subTitle: "Pessoas usuárias de drogas",
+      },
+    ],
+  },
+  {
+    icon: <Briefcase color="#38A973" size={32} />,
+    title: "Nossos Serviços",
+    Listvalues: [
+      {
+        icon: <ClipboardCheck color="#38A973" size={16} />,
+        subTitle: "Atendimentos: Psicólogo, Clínico Geral, Nutricionista, Psiquiatra, Fisioterapia, Assistência Social",
+      },
+      {
+        icon: <ClipboardCheck color="#38A973" size={16} />,
+        subTitle: "Distribuição: Cestas básicas, cadeiras de rodas, muletas, enxovais, fraldas para idosos",
+      },
+      {
+        icon: <ClipboardCheck color="#38A973" size={16} />,
+        subTitle: "Palestras: Drogas, educação sexual, DSTs/AIDS para pais, comunidades e docentes",
+      },
+      {
+        icon: <ClipboardCheck color="#38A973" size={16} />,
+        subTitle: "Oficinas: Terapêuticas, cartazes, concursos e jingles",
+      },
+      {
+        icon: <ClipboardCheck color="#38A973" size={16} />,
+        subTitle: "Oficinas: Terapêuticas, cartazes, concursos e jingles",
+      },
+      {
+        icon: <ClipboardCheck color="#38A973" size={16} />,
+        subTitle: "Reuniões Socioeducativas",
       },
     ],
   },

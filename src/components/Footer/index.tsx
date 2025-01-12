@@ -1,7 +1,7 @@
-import { Container } from "../../styles";
 import * as S from "./styles";
 import { Mail, Phone } from "lucide-react";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { Container } from "../../styles";
 
 // import fotoFooter from "../../../public/logo-adqpal.png";
 
@@ -47,9 +47,10 @@ function Footer() {
                 </li>
                 <li className="footer-contact__list-item">
                   <a
-                    href="tel:+55994051730"
+                    href="https://wa.me/5582994051730"
                     title="contato de whatsapp"
                     className="footer-contact__link"
+                    target="reg"
                   >
                     <FaWhatsapp size={24} />
                     82 99405-1730
@@ -60,6 +61,7 @@ function Footer() {
                     href="https://instagram.com/adqpa.lsmc"
                     title="contato de instragram"
                     className="footer-contact__link"
+                    target="reg"
                   >
                     <FaInstagram size={24} />
                     Instagram
@@ -100,11 +102,11 @@ function Footer() {
             />
           </S.FooterSection>
         </S.FooterGrid>
-      </Container>
 
-      <S.Copyright className="footer__copyright">
-        © 2024 ADQPAL. Todos os direitos reservados.
-      </S.Copyright>
+        <S.Copyright className="footer__copyright">
+          © 2024 ADQPAL. Todos os direitos reservados.
+        </S.Copyright>
+      </Container>
     </S.FooterContainer>
   );
 }

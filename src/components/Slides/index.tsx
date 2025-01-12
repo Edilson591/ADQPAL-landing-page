@@ -22,7 +22,6 @@ import "swiper/css/scrollbar";
 import "swiper/css/effect-cube";
 import { Link } from "react-router-dom";
 
-
 function ContainerCarrossel() {
   const [progress, setProgress] = useState<number>(0);
   const autoplayDelay = 10000;
@@ -73,11 +72,16 @@ function ContainerCarrossel() {
         {slideData.map((item) => (
           <SwiperSlide key={item.id}>
             <Link to={item.link || "#"}>
-              <S.SlideImage
-                src={item.image}
-                alt={item.title}
-                className="slide-item"
-              />
+              <picture>
+                <source srcSet={item.imageLarge} media="(min-width: 1200px)" />
+                <source srcSet={item.imagemMedium} media="(min-width: 768px)" />
+                <S.SlideImage
+                  src={item.imagemMedium}
+                  alt={item.title}
+                  loading="lazy"
+                  className="slide-item"
+                />
+              </picture>
             </Link>
           </SwiperSlide>
         ))}

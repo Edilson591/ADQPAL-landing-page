@@ -1,7 +1,7 @@
 import Hero from "../../../components/Hero";
 import SectionHeaders from "../../../sections/MainHeader";
 import * as S from "./styles";
-import backgroundDocumentos from "../../../assets/foto-slide-instalacoes.jpg";
+import ImgDocumentos from "../../../assets/imagens backgroundSections/foto-logo-documentos.jpg";
 import { Container } from "../../../styles";
 import { dataDocumentosInstitucionais } from "../../../data/dataDocumentosInstitucional";
 import { FileText } from "lucide-react";
@@ -10,10 +10,10 @@ import { ContainerPrincipal } from "../../../sections/MainContainer/styles";
 function PageDocumentosInstituicao() {
   return (
     <S.SectionDocumentos>
-      <Hero image={backgroundDocumentos} marginBotton="4rem" />
-      <SectionHeaders title="Documentos Instituição" id="contas-title" />
+      <Hero image={ImgDocumentos} marginBottom="4rem" />
+      <SectionHeaders title="Documentos Instituição" id="contas-title" subBackground={true} />
       <S.ContainerOverlay>
-        <ContainerPrincipal >
+        <ContainerPrincipal>
           <Container>
             <S.ListContainer>
               <S.StyledList>

@@ -19,8 +19,8 @@ export const SlideImage = styled.img`
   min-height: 100%;
   object-fit: cover;
   overflow: hidden;
-  /* object-position: center; */
-  object-position: top;
+  object-position: center;
+
   
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     max-height: 250px;

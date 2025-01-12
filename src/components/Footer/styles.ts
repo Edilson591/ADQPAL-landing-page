@@ -23,6 +23,10 @@ export const FooterSection = styled.div`
   .footer__description {
     margin-bottom: 1rem;
     color: ${({ theme }) => theme.colors.primary};
+
+    @media (max-width: 768px) {
+    font-size: ${({theme}) => theme.sizes.small};
+  }
   }
   .footer__title {
     font-size: 1.25rem;
@@ -74,7 +78,7 @@ export const ContactsContainer = styled.div`
 
 export const AttendanceContainer = styled.div`
   .attendance-title {
-    font-size: 1rem;
+    font-size: ${({theme}) => theme.sizes.large};
     font-weight: 600;
     margin-bottom: 1rem;
   }
@@ -107,6 +111,8 @@ export const MapIframe = styled.iframe`
   border: none;
   display: block;
   margin: 0 auto;
+
+
   @media (max-width: 768px) {
     width: 90%;
     height: 300px;
@@ -115,6 +121,10 @@ export const MapIframe = styled.iframe`
 
 export const Copyright = styled.div`
   margin-top: 2rem;
-  font-size: 0.875rem;
+  font-size: 0.6rem;
   color: ${({ theme }) => theme.colors.primary};
+
+  @media (max-width: 768px) {
+    
+  }
 `;

@@ -5,6 +5,7 @@ import { SectionContas } from "./styles";
 import Hero from "../../../components/Hero";
 import { Container } from "../../../styles";
 import { ContainerPrincipal } from "../../../sections/MainContainer/styles";
+import ImgContas from "../../../assets//imagens backgroundSections/foto-logo-contas.png"
 // import { items } from "../../../features/FinancialReports/YearlyAccordion";
 
 function PageTransparencia() {
@@ -15,13 +16,14 @@ function PageTransparencia() {
   // };
   return (
     <SectionContas>
-      <Hero image="https://img.freepik.com/fotos-gratis/closeup-de-economista-usando-calculadora-ao-passar-por-contas-e-impostos-no-escritorio_637285-3156.jpg?t=st=1735392233~exp=1735395833~hmac=6f18faaf1022d57f42554503750460ef1609470b5c7f09cfd79916da143cb652&w=740" />
+      <Hero image={ImgContas} />
       <ContainerPrincipal>
         <Container>
           <SectionHeaders
             title="Prestação de Contas"
             subtitle="Em breve mais informações"
             id="contas-title"
+            subBackground={true}
           />
           {/* <Accordion
           items={items}

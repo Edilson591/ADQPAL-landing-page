@@ -1,6 +1,7 @@
 import * as S from "./styles";
-import photoDoacao from "../../../assets/foto-section-doacao.jpeg";
+import photoDoacao from "../../../assets/imagens backgroundSections/foto-section-doacao.jpeg";
 import SectionHeaders from "../../MainHeader";
+import ButtonLink from "../../../components/Button";
 
 function SectionDoacaoAndVoluntario() {
   return (
@@ -28,8 +29,10 @@ function SectionDoacaoAndVoluntario() {
               Junte-se a nós nesta missão de amor e solidariedade.
             </p>
             <div className="section-doacao-voluntario__content-description-button">
-              <S.Button>Doe Agora e Transforme Vidas!</S.Button>
-              <S.Button>Seja um Voluntario</S.Button>
+              {/* <S.Button>Doe Agora e Transforme Vidas!</S.Button>
+              <S.Button>Seja um Voluntario</S.Button> */}
+              <ButtonLink name="Seja um Voluntario" ariaLabel="Seja um Voluntario" href="#"/>
+              <ButtonLink name="Doe Agora e Tranforme Vidas!" ariaLabel="Doe Agora" href="#"/>
             </div>
           </div>
         </S.SectionContent>

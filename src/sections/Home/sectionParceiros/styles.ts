@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-// Animação ajustada
 const scroll = keyframes`
   0% {
     transform: translateX(-100%);
@@ -16,6 +15,10 @@ const scroll = keyframes`
 
 export const SectionParceiros = styled.section`
   padding: 2rem 1rem;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding: 2rem 0;
+  }
 `;
 
 export const SliderContainer = styled.div`

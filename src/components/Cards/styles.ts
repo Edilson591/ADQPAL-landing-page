@@ -1,27 +1,48 @@
 // import { color } from './../../../node_modules/@mui/system/palette/palette.d';
-import { Button as MuiButton } from "@mui/material";
+import { Button as MuiButton, Typography, CardContent} from "@mui/material";
 import { Card } from "@mui/material";
 import styled from "styled-components";
 
-export const CardContainer = styled(Card)(({ theme }) => ({
-  maxWidth: 400,
-  margin: "0 auto",
-  boxShadow: "3px 3px 10px rgba(0, 0, 0, 0.5);",
-  backgroundColor:`${theme.colors.textSecondary}50 !important`,
-  transition: "all 0.5s ease",
-  "&:hover": {
-    transform:"scale(1.05)",
-    transition: "all 0.5s ease"
+interface PropsImg {
+  $height: string;
+}
+
+interface PropsCard {
+  $padding: string;
+}
+
+export const CardContainer = styled(Card)`
+  max-width: 380px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  background-color:${({theme}) => theme.colors.textSecondary}50 !important;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.05);
+    transition: all .5s ease;
   }
-}));
+`;
 
-export const CardImg = styled.img(() => ({
-  width: "100%",
-  height: 140,
-  objectFit: "cover",
-  objectPosition: "top",
-}));
+export const CardContents = styled(CardContent)<PropsCard>`
+  padding: ${({$padding}) => $padding} !important;
+`
 
+export const CardImg = styled.img<PropsImg>`
+  width: 100%;
+  height: ${({ $height }) => $height};
+  object-fit: cover;
+  object-position: top;
+`;
+
+
+export const StyledTypography = styled(Typography)`
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+  gap: 1rem;
+  font-size: ${({theme}) => theme.sizes.medium} !important;
+  font-weight: 500 !important;
+`
 export const CustonButton = styled(MuiButton)`
     color: ${(props) => props.theme.colors.textPrimary} !important;
     background-color: ${(props) => props.theme.colors.primary}!important;

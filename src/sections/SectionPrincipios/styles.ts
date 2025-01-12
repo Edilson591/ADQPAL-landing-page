@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerPrincipios = styled.div`
-  margin-bottom: 4rem;
+  padding: 4rem 0;
 `;
 
 export const ListPrincipios = styled.ul`
@@ -58,6 +58,9 @@ export const ItemPrincipios = styled.li`
       align-items: center;
       gap: 0.5rem;
       text-align: start;
+      svg {
+        flex-shrink: 0;
+      }
 
       @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
         font-size: ${({ theme }) => theme.sizes.small};

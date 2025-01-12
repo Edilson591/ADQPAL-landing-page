@@ -1,27 +1,40 @@
-import imgSlide1 from "../assets/foto-frente-adqpal.jpg";
-import imgSlide2 from "../assets/foto-footer.jpg";
-import imgSlide3 from "../assets/WhatsApp Image 2025-01-02 at 15_LE_upscale_balanced_x4.jpg"
+import imgSlide1Medium from "../assets/imagens slide/foto-slide1-medium.png";
+import imgSlide1Large from "../assets/imagens slide/foto-slide1-large.png";
+import imgSlide2Large from "../assets/imagens slide/foto-slide2-large.png";
+import imgSlide2Medium from "../assets/imagens slide/foto-slide2-medium.png";
 
-export const slideData = [
+
+interface SlidesData {
+  id: number;
+  title: string;
+  link?:string;
+  imageLarge: string;
+  imagemMedium: string;
+}
+
+export const slideData: SlidesData[] = [
   {
     id: 1,
-    title: "Imagem 1",
-    image: imgSlide1,
-    link: "institucional/quemsomos"
+    title: "imagem frente ADQPAL",
+    link: "institucional/quemsomos",
+    imageLarge: imgSlide2Large,
+    imagemMedium: imgSlide2Medium
   },
   {
     id: 2,
-    title: "Imagem 2",
-    image: imgSlide2,
+    title:"Imagem Ouvidoria Sus",
+    link: "institucional/quemsomos",
+    imageLarge: imgSlide1Large,
+    imagemMedium: imgSlide1Medium,
   },
-  {
-    id: 3,
-    title: "Imagem 3",
-    image: imgSlide3,
-  },
-  {
-    id: 4,
-    title: "Imagem 4",
-    image: "https://pestalozzibrasilia.org.br//images/banner-31-08.png",
-  },
+  // {
+  //   id: 3,
+  //   title: "Imagem 3",
+  //   image: imgSlide3,
+  // },
+  // {
+  //   id: 4,
+  //   title: "Imagem 4",
+  //   image: imgSlide4,
+  // },
 ];

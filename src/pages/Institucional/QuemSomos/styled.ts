@@ -5,15 +5,15 @@ export const Sectionimage = styled.section`
   margin: 0;
 `;
 
-export const TextContent = styled.div`
+export const SectionText = styled.div`
   margin-bottom: 2rem;
   p {
     margin-bottom: 0.5rem;
   }
 `;
 
-export const ContainerPrincipios = styled.div`
-  margin-bottom: 4rem;
+export const ContainerPrincipios = styled.section`
+ margin: 0 auto;
 `;
 
 export const ListPrincipios = styled.ul`
