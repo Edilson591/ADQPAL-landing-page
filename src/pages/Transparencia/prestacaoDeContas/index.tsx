@@ -16,7 +16,7 @@ function PageTransparencia() {
   // };
   return (
     <SectionContas>
-      <Hero image={ImgContas} />
+      <Hero image={ImgContas} descriptionHero="imagem ilustrativa de constas"/>
       <ContainerPrincipal>
         <Container>
           <SectionHeaders

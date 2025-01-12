@@ -10,7 +10,7 @@ import { ContainerPrincipal } from "../../../sections/MainContainer/styles";
 function PageDocumentosInstituicao() {
   return (
     <S.SectionDocumentos>
-      <Hero image={ImgDocumentos} marginBottom="4rem" />
+      <Hero image={ImgDocumentos} marginBottom="4rem" descriptionHero="imagem ilustrativa de Documentos"/>
       <SectionHeaders title="Documentos Instituição" id="contas-title" subBackground={true} />
       <S.ContainerOverlay>
         <ContainerPrincipal>
