@@ -2,7 +2,7 @@ import * as S from "./styled";
 import SectionHeaders from "../../../sections/MainHeader";
 import { Container } from "../../../styles";
 import Hero from "../../../components/Hero";
-import heroQuemSomos from "../../../assets/imagens backgroundSections/foto-o-que-fazemos.png";
+import heroQuemSomos from "../../../assets/imagens backgroundSections/foto-o-que-fazemos.webp";
 import { ContainerPrincipal } from "../../../sections/MainContainer/styles";
 import SectionPrincipios from "../../../sections/SectionPrincipios";
 
