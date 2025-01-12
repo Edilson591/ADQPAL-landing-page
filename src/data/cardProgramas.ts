@@ -15,6 +15,6 @@ export const cardProgramas: propsCardHover[] = [
     title: "Plano de Assistência Familiar (PAF)",
     description:
       "Conheça nosso programa que oferece telemedicina com mais de 10 especialidades, incluindo odontologia, garantindo cuidado e conveniência para você e sua família.",
-    link: "/comunicacao/programas/PLF",
+    link: "/comunicacao/programas/PAF",
   },
 ];

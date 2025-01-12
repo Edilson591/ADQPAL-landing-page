@@ -7,7 +7,7 @@ import PageOQueFazemos from "../pages/Institucional/OqueFazemos";
 import PageDiretoria from "../pages/Institucional/GestaoEAdministração";
 import PageServices from "../pages/Comunicação/Serviços";
 import PageProgramas from "../pages/Comunicação/Programas";
-import PageAssistenciaFamiliar from "../pages/Comunicação/Programas/Assistencia Familiar";
+import PageAssistenciaFamiliar from "../pages/Comunicação/Programas/PAF";
 
 function Routes() {
   return (
@@ -25,7 +25,7 @@ function Routes() {
         <Route path="/institucional/oquefazemos" element={<PageOQueFazemos />} />
         <Route path="/institucional/gestaoeadministracao" element={<PageDiretoria />} />
         <Route path="/comunicacao/programas" element={<PageProgramas />} />
-        <Route path="/comunicacao/programas/PLF" element={<PageAssistenciaFamiliar />} />
+        <Route path="/comunicacao/programas/PAF" element={<PageAssistenciaFamiliar />} />
         <Route path="/comunicacao/servicos" element={<PageServices />} />
       </RouterRoutes>
   );
