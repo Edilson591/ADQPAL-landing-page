@@ -154,10 +154,19 @@ function Header() {
             </S.MenuMobile>
 
             {/* Mobile Menu Button*/}
-            <button onClick={() => {
-              setActiveMenuMobile(!activeMenuMobile)
-              setActiveMenu(null)
-              }}>
+            <button
+              onClick={() => {
+                setActiveMenuMobile(!activeMenuMobile);
+                setActiveMenu(null);
+              }}
+              aria-expanded={activeMenuMobile}
+              aria-label={
+                activeMenuMobile ? "Fechar menu mobile" : "Abrir menu mobile"
+              }
+              title={
+                activeMenuMobile ? "Fechar menu mobile" : "Abrir menu mobile"
+              }
+            >
               {activeMenuMobile ? <X size={30} /> : <Menu size={30} />}
             </button>
           </S.Nav>
@@ -166,8 +175,8 @@ function Header() {
       <S.BackgroundOverlay
         $activeMenuMobile={activeMenuMobile}
         onClick={() => {
-          setActiveMenuMobile(!activeMenuMobile)
-          setActiveMenu(null)
+          setActiveMenuMobile(!activeMenuMobile);
+          setActiveMenu(null);
         }}
       />
     </>
