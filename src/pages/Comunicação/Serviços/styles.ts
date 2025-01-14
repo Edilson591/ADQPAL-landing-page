@@ -50,14 +50,18 @@ export const ExamesList = styled.ul`
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: .5rem;
 
-  li {
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     font-size: ${({ theme }) => theme.sizes.medium};
+  }
+  
+  li {
+    font-size: ${({ theme }) => theme.sizes.small};
     color: ${({ theme }) => theme.colors.textPrimary};
     margin-bottom: 0.5rem;
-
+    
     &:last-child {
       margin-bottom: 0;
     }

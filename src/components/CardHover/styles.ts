@@ -17,7 +17,7 @@ export const CardInfo = styled.div`
 
 export const CardHoverContent = styled.div`
   width: 280px;
-  height: 360px;
+  height: 400px;
   padding: 2rem 1rem;
   background: ${({ theme }) => theme.colors.primary};
   position: relative;
@@ -57,7 +57,7 @@ export const CardHoverContent = styled.div`
     transform: translate(0);
   }
 
-  @media (hover: none) {
+
   &:hover {
     transform: none;
   }
@@ -70,13 +70,14 @@ export const CardHoverContent = styled.div`
     opacity: 1;
     transform: translate(0);
   }
-}
+
 
 `;
 export const CardImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: right;
   position: absolute;
   top: 0;
   left: 0;
@@ -94,5 +95,3 @@ export const CardDescription = styled.p`
   font-size: ${({ theme }) => theme.sizes.small};
   margin: 8px 0;
 `;
-
-export const CardLink = styled.a``;

@@ -37,7 +37,7 @@ body {
   background-size: cover; 
   font-family: ${(props) => props.theme.fonts.body};
   p {
-    color: rgba(0,0,0,0.6);
+    color: ${({theme}) => theme.colors.textDescription} ;
   }
 
   

@@ -6,11 +6,12 @@ interface PropsCard {
   title: string;
   description: string;
   link: string;
+  name?:string
 }
 
-function CardHover({ image, title, description, link }: PropsCard) {
+function CardHover({ image, title, description, link,name }: PropsCard) {
   return (
-    // <article aria-labelledby={`${title}-heading`} role="group">
+    <article aria-labelledby={`${title}-heading`} role="group">
     <S.ContainerWrapper>
       <S.CardHoverContent>
         <S.CardImage
@@ -22,7 +23,7 @@ function CardHover({ image, title, description, link }: PropsCard) {
           <S.CardTitle id={`${title}-heading`}>{title}</S.CardTitle>
           <S.CardDescription>{description}</S.CardDescription>
           <ButtonLink
-            name="Saiba mais"
+          name={name || "Saiba Mais"}
             href={link}
             aria-label={`Saiba mais sobre ${title}`}
             rel="noopener noreferrer"
@@ -30,7 +31,7 @@ function CardHover({ image, title, description, link }: PropsCard) {
         </S.CardInfo>
       </S.CardHoverContent>
     </S.ContainerWrapper>
-    // </article>
+    </article>
   );
 }
 

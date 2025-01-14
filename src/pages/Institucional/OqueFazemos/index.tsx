@@ -1,5 +1,5 @@
 import Hero from "../../../components/Hero";
-import HeroOqueFazemos from "../../../assets/imagens backgroundSections/img-hero-conta.jpg";
+import HeroOqueFazemos from "../../../assets/imagens backgroundSections/foto-section-doacao.webp";
 import { ContainerPrincipal } from "../../../sections/MainContainer/styles";
 import SectionHeaders from "../../../sections/MainHeader";
 import { Container } from "../../../styles";
@@ -9,7 +9,7 @@ import SectionPrincipios from "../../../sections/SectionPrincipios";
 function PageOQueFazemos() {
   return (
     <>
-      <Hero image={HeroOqueFazemos} descriptionHero="foto ilustrativa do o que fazemos"/>
+      <Hero image={HeroOqueFazemos} descriptionHero="foto ilustrativa do o que fazemos" />
       <ContainerPrincipal>
         <Container>
           <S.ContainerContent>

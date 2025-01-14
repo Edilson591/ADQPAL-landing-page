@@ -1,7 +1,7 @@
 import Hero from "../../../components/Hero";
 import SectionHeaders from "../../../sections/MainHeader";
 import * as S from "./styles";
-import ImgDocumentos from "../../../assets/imagens backgroundSections/foto-logo-documentos.jpg";
+import ImgDocumentos from "../../../assets/imagens backgroundSections/foto-logo-documentos.webp";
 import { Container } from "../../../styles";
 import { dataDocumentosInstitucionais } from "../../../data/dataDocumentosInstitucional";
 import { FileText } from "lucide-react";

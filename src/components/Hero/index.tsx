@@ -4,12 +4,14 @@ interface PropsHero {
   image: string;
   descriptionHero: string
   marginBottom?: string;
+  objectFit?: string;
+
 }
 
-const Hero = ({ image, marginBottom,descriptionHero }: PropsHero) => {
+const Hero = ({ image, marginBottom,objectFit, descriptionHero }: PropsHero) => {
   return (
     <S.HeroContainer>
-      <S.ImgHero src={image} alt={descriptionHero} $marginBottom={marginBottom} />
+      <S.ImgHero src={image} alt={descriptionHero} $objectFit={objectFit} $marginBottom={marginBottom} />
     </S.HeroContainer>
   );
 };

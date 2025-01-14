@@ -2,7 +2,7 @@ import MainContainer from "../../../sections/MainContainer";
 import SectionHeaders from "../../../sections/MainHeader";
 import { Container } from "../../../styles";
 import * as S from "./styles"
-import { cardProgramas } from "../../../data/cardProgramas";
+import { cardProgramas } from "../../../data/cardHoverContainerData";
 import CardHover from "../../../components/CardHover";
 
 function PageProgramas() {

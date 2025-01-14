@@ -1,6 +1,6 @@
 import * as S from "./styles";
 import { ContainerPrincipal } from "../../../sections/MainContainer/styles";
-import imgOqueFazemos from "../../../assets/imagens backgroundSections/img-hero-conta.jpg";
+import imgGestao from "../../../assets/imagens backgroundSections/foto-logo-gestao.webp";
 import Hero from "../../../components/Hero";
 import SectionHeaders from "../../../sections/MainHeader";
 import { diretoriaExecutivaData } from "../../../data/diretoriaExecutivaData";
@@ -8,7 +8,7 @@ import { diretoriaExecutivaData } from "../../../data/diretoriaExecutivaData";
 function PageDiretoria() {
   return (
     <>
-      <Hero image={imgOqueFazemos} descriptionHero="imagem do que fazemos" />
+      <Hero image={imgGestao} descriptionHero="imagem do que fazemos" />
       <ContainerPrincipal>
         <SectionHeaders
           title="Gestão e Administração"

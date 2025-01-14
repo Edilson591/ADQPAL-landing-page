@@ -5,7 +5,7 @@ import { SectionContas } from "./styles";
 import Hero from "../../../components/Hero";
 import { Container } from "../../../styles";
 import { ContainerPrincipal } from "../../../sections/MainContainer/styles";
-import ImgContas from "../../../assets//imagens backgroundSections/foto-logo-contas.png"
+import ImgContas from "../../../assets//imagens backgroundSections/foto-logo-contas.webp"
 // import { items } from "../../../features/FinancialReports/YearlyAccordion";
 
 function PageTransparencia() {

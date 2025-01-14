@@ -37,7 +37,7 @@ export const subMenuData: MenuItem[] = [
     submenu: [
       { label: "Serviços", link: "/comunicacao/servicos" },
       { label: "Programas", link: "/comunicacao/programas" },
-      { label: "Galeria de fotos", link: "/comunicacao/galeriaDeFotos" },
+      { label: "Galeria de fotos", link: "/comunicacao/galeria-de-fotos" },
     ],
   },
 ];

@@ -6,14 +6,14 @@ export const Sectionimage = styled.section`
 `;
 
 export const SectionText = styled.div`
-  margin-bottom: 2rem;
+  margin: 4rem 0;
   p {
     margin-bottom: 0.5rem;
   }
 `;
 
 export const ContainerPrincipios = styled.section`
- margin: 0 auto;
+  margin: 0 auto;
 `;
 
 export const ListPrincipios = styled.ul`

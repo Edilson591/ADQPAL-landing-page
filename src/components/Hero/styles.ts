@@ -3,6 +3,7 @@ import styled from "styled-components";
 interface PropHero {
   src: string;
   $marginBottom?: string;
+  $objectFit?: string;
 }
 
 export const HeroContainer = styled.section`
@@ -17,13 +18,17 @@ export const HeroContainer = styled.section`
 
 export const ImgHero = styled.img<PropHero>`
   width: 100%;
-  height: auto; 
-  object-fit: cover; 
-  max-height: 400px; 
+  object-fit: ${({$objectFit}) => $objectFit || "cover"};
+  max-height: 350px; 
   margin-bottom: ${({ $marginBottom }) => $marginBottom || "0"};
-  object-position: bottom;
+  object-position: center center;
 
+  /* @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    max-height: 200px; 
+    height: auto;
+  } */
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    max-height: 250px; 
+    max-height: 150px; 
+    height: auto;
   }
 `;

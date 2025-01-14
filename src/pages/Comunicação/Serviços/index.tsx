@@ -2,13 +2,14 @@ import Cards from "../../../components/Cards";
 import MainContainer from "../../../sections/MainContainer";
 import SectionHeaders from "../../../sections/MainHeader";
 import * as S from "./styles";
-import { cardsAtendimentoData } from "../../../data/serviceAtendimentoData";
+import { cardsAtendimentoData } from "../../../data/serviceData";
+import { cardsExamesData } from "../../../data/serviceData";
 import { Container } from "../../../styles";
 
 
 function PageServices() {
   return (
-    <MainContainer padding="4rem 2rem">
+    <MainContainer padding="4rem 0">
       <SectionHeaders
         title="Exames e Serviços"
         subtitle="Conheça nossos serviços e exames disponíveis"
@@ -18,7 +19,7 @@ function PageServices() {
           <S.Section>
             <S.SectionTitle id="exames-section">Exames</S.SectionTitle>
             <S.ExamesList aria-labelledby="exames-section" role="list">
-              {cardsAtendimentoData.map((card, index) => (
+              {cardsExamesData.map((card, index) => (
                 <li
                   key={index}
                   role="listitem"
@@ -26,7 +27,7 @@ function PageServices() {
                   aria-label={`Serviço: ${card.titulo}`}
                 >
                   <Cards
-                    imagem={card.imagem}
+                    imagem={card.imagem || ""} 
                     titulo={card.titulo}
                     height={card.height}
                     paddingCard={card.paddingCard}
@@ -48,7 +49,7 @@ function PageServices() {
                   aria-label={`Serviço: ${card.titulo}`}
                 >
                   <Cards
-                    imagem={card.imagem}
+                    imagem={card.imagem || ""}
                     titulo={card.titulo}
                     height={card.height}
                     paddingCard={card.paddingCard}
@@ -70,7 +71,7 @@ function PageServices() {
                   aria-label={`Serviço: ${card.titulo}`}
                 >
                   <Cards
-                    imagem={card.imagem}
+                    imagem={card.imagem || ""}
                     titulo={card.titulo}
                     height={card.height}
                     paddingCard={card.paddingCard}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home page -->
+  <url>
+    <loc>https://adqpal.org/</loc>
+    <lastmod>2025-01-13</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Transparência -->
+  <url>
+    <loc>https://adqpal.org/transparencia/prestacao-de-contas</loc>
+    <lastmod>2025-01-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://adqpal.org/transparencia/documentos-institucionais</loc>
+    <lastmod>2025-01-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Institucional -->
+  <url>
+    <loc>https://adqpal.org/institucional/quemsomos</loc>
+    <lastmod>2025-01-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://adqpal.org/institucional/oquefazemos</loc>
+    <lastmod>2025-01-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://adqpal.org/institucional/gestaoeadministracao</loc>
+    <lastmod>2025-01-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Comunicação -->
+  <url>
+    <loc>https://adqpal.org/comunicacao/programas/PAF</loc>
+    <lastmod>2025-01-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://adqpal.org/comunicacao/programas</loc>
+    <lastmod>2025-01-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://adqpal.org/comunicacao/servicos</loc>
+    <lastmod>2025-01-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>

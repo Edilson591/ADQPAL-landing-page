@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import photoDoacao from "../../../assets/imagens backgroundSections/foto-section-doacao.jpeg";
+import photoDoacao from "../../../assets/imagens backgroundSections/foto-section-doacao.webp";
 import SectionHeaders from "../../MainHeader";
 import ButtonLink from "../../../components/Button";
 
